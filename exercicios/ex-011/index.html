@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+
+    <p>Tente abrir esse site em vários disposivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/P.png" type="image/png">
+    <source media="(max-width: 1050px )" srcset="imagens/M.png" type="image/png">
+    <img src="imagens/G.png" alt="Imagem flexivel">
+</picture>
+
+    <hr>
+
+    <h1>Reproduzindo áudios</h1>
+    <h2>Vamos aprender a reproduzir áudios em HTML5.</h2>
+
+    <!-- Primeiro método de colocar áudio no HTML5 -->
+    <p>Música On The Flip - The Grey Room Density & Time:</p>
+    <audio src="midia/On The Flip - The Grey Room _ Density & Time.mp3" controls></audio>
+
+    <!-- Segundo método de colocar áudio no HTML5 -->
+    <!-- Dependendo do navegador e não vai suportar o tipo mp3 então devemos colocar os outros dois tipos que é o .ogg e o .wav. É recomendado usar o .mp3 pois ele é mais comum, já o .wav é muito pessado e isso não é bom para sites então é melhor evita-lo.-->
+    <P>Podcast do Guanabara:</P>
+    <audio controls>
+      <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+      <source src="midia/guanacast-33.ogg" type="audio/ogg">
+      <source src="midia/guanacast-33.wav" type="audio/wav">
+      <p>Infelizmente seu navegador não conseguiu reproduzir esse áudio. <br>
+    Para baixar esse áudio <a href="midia/guanacast-33.mp3">clique aqui</a>.</p>
+    </audio>
+
+
+</body>
+</html>
