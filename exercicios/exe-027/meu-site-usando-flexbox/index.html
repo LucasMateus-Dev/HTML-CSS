@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Usando Flexbox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #E3E3E1;
+        }
+
+        h1 {
+            color: white;
+            margin-right: 100px;
+            padding: 10px;
+        }
+
+        header {
+            background-color: #828282;
+            display: flex;
+            flex-flow: row wrap;   
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            display: flex;
+            flex-flow: row wrap; 
+        }
+        
+        li {
+            border: 2px solid black;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+            margin: 5px;
+            padding: 8px;
+
+            display: flex;
+            flex-flow: row wrap; 
+        }
+
+        li:hover {
+            background-color: white;
+            color: black;
+        }
+
+        main {
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        @media screen and (max-width: 545px){
+
+            header {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            }
+
+            nav ul {
+                display: flex;
+                flex-flow: column wrap; 
+            }
+
+            li {
+                display: flex;
+                flex-flow: column nowrap; 
+            }   
+
+            h1 {
+                margin: 0px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+
+        <nav>
+            <ul>
+                <li class="item">Opção 1</li>
+                <li class="item">Opção 2</li>
+                <li class="item">Opção 3</li>
+                <li class="item">Opção 4</li>
+                <li class="item">Opção 5</li>
+                <li class="item">Opção 6</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Teste de flexbox</h2>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates at molestiae sint! Aliquam excepturi officia eos nam quam provident tempora. Natus repudiandae placeat explicabo error obcaecati eligendi corrupti tempore dignissimos? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, aperiam excepturi nihil nulla molestias neque, quo obcaecati optio soluta sint illo possimus ex. Omnis quos debitis saepe doloremque magni asperiores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti id ea eligendi voluptatibus voluptatem hic mollitia molestias minus, numquam enim commodi optio quas quia doloribus aperiam ut magni cumque fugiat!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates libero nisi in, illo inventore sed adipisci incidunt velit atque quibusdam officia impedit dolorem et! Beatae dicta non quas quos esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates enim eaque impedit commodi aliquid dolor aperiam quam laborum, eligendi fuga officia labore fugit necessitatibus</p>
+    </main>
+    
+</body>
+</html>
